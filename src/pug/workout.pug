@@ -1,0 +1,221 @@
+extends _template.pug
+block header
+block footer
+block js    
+    script(src='https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+
+block content
+    .container
+        .row
+            .col-md-12.text-center#bienvenida
+                //- icon
+                .w-100.mb-4.d-flex.justify-content-center.align-items-center
+                    .circle-icon.text-center
+                        i.fas.fa-medal
+                h1 Hola 
+                    strong.text-danger#nombreUsuario
+                h2 Para comenzar con tu rutina de entrenamiento vamos a realizar una evaluación de tu estado físico.
+                br
+                h3 Tenemos los siguientes datos de tu última evaluación
+                .datos.text-start
+                    //- tabla vertical titulo alineado a la derecha y contenido a la izquierda las td deben medir lo mismo
+                    table.table.table-bordered
+                        thead
+                            tr
+                                th.w-50.text-end Antropometría
+                                th.w-50 Valor   
+                        tbody
+                            tr
+                                td.w-50.text-end Altura
+                                td.w-50#alturaValor
+                            tr
+                                td.text-end Peso
+                                td#pesoValor
+                            tr
+                                td.text-end Objetivo
+                                td#objetivoValor
+
+                                //- footer con la fecha de la última actualización
+                        tfooter
+                            tr
+                                td.text-center(colspan="2") Última actualización <br>
+                                    b#fecha_valorarcion.text-danger
+                .d-flex.justify-content-center.align-items-center
+                    button.btn.btn-danger.btn-lg.btn-block.mt-4.me-3#generar_rutina
+                        span ✨ Generar rutina
+                    button.btn.btn-outline-danger.btn-lg.btn-block.mt-4#actualizar_datos Actualizar mis datos
+        //- datos personales
+        .row.mt-5
+            .col-md-12#datos_fisicos.d-none
+                .w-100.mb-4.d-flex.justify-content-center.align-items-center
+                    .circle-icon.text-center
+                        i.fas.fa-weight
+                h1.text-center Datos físicos
+                h2.text-center Últimos datos antes de comenzar.
+                .form_datos_fisicos
+                    .mb-3
+                        label(for="altura") Altura (cm)
+                        input#altura.form-control(type="number" placeholder="Altura")
+                    .mb-3
+                        label(for="peso") Peso (kg)
+                        input#peso.form-control(type="number" placeholder="Peso")
+                    .mb-3
+                        label(for="objetivo") Objetivo
+                        select#objetivo.form-select
+                            option(value="0") Selecciona
+                    .mb-3
+                        label(for="actividad") Actividad física
+                        select#actividad.form-select
+                            option(value="0") Selecciona
+                            option(value="1") Sedentario
+                            option(value="2") Ligera
+                            option(value="3") Moderada
+                            option(value="4") Intensa
+                    .mb-3
+                        //- dias de entrenamiento
+                        label(for="dias_entrenamiento") Cuántos días a la semana entrenas
+                        select#dias_entrenamiento.form-select
+                            option(value="0") Selecciona
+                            option(value="1") 1 día
+                            option(value="2") 2 días
+                            option(value="3") 3 días
+                            option(value="4") 4 días
+                            option(value="5") 5 días
+                            option(value="6") 6 días
+                            option(value="7") 7 días
+                    .mb-3
+                        label(for="prescripcion") Prescripción médica
+                        textarea#prescripcion.form-control(type="text" placeholder="Prescripción médica" value="Ninguna")
+
+                    .mb-3.text-center.w-100.sticky-bottom.bg-bootom
+                        button.btn.btn-danger.btn-lg.btn-block.mt-4#guardarDatos Guardar
+
+            //- entrenamiento generado
+            .col-md-12#entrenamiento.d-none
+                .w-100.mb-4.d-flex.justify-content-center.align-items-center
+                    .circle-icon.text-center
+                        i.fas.fa-dumbbell
+                h1.text-center Entrenamiento
+                h2.text-center Tu rutina de entrenamiento ha sido generada.
+                hr
+                .entrenamiento
+                    .mb-3
+                        .row#exercisePlan
+
+block jsexec
+
+    script.
+        let urlParams = new URLSearchParams(window.location.search);
+        let user = { id: urlParams.get('id') };
+        document.addEventListener('DOMContentLoaded', () => {
+
+            axios.post('http://localhost:37777/api/datosIniciales', { id: user.id }, { headers: { 'Content-Type': 'application/json' } })
+                .then((response) => {
+                    const user = response.data.user;
+                    const objetivos = response.data.objetivos;
+
+                    document.querySelector('#nombreUsuario').textContent = user.nombre1 + ' ' + user.apellido1;
+                    document.querySelector('#alturaValor').textContent = user.antrop_talla;
+                    document.querySelector('#pesoValor').textContent = user.antrop_peso;
+                    document.querySelector('#objetivoValor').textContent = user.objetivo;
+                    document.querySelector('#fecha_valorarcion').textContent = dayjs(user.fecha_valoracion).format('DD/MM/YYYY');
+
+                    const objetivoSelect = document.querySelector('#objetivo');
+                    objetivos.forEach(objetivo => {
+                        const option = document.createElement('option');
+                        option.value = objetivo.id_dominio;
+                        option.textContent = objetivo.dominio;
+                        if (objetivo.id_dominio === user.antrop_objetivo) {
+                            option.selected = true;
+                        }
+                        objetivoSelect.appendChild(option);
+                    });
+
+                    document.querySelector('#altura').value = user.antrop_talla;
+                    document.querySelector('#peso').value = user.antrop_peso;
+                })
+                .catch((error) => {
+                    console.error(error);
+                    alert('Error al cargar los datos iniciales');
+                });
+
+            document.querySelector('#bienvenida button').addEventListener('click', () => {
+                document.querySelector('#bienvenida').classList.add('d-none');
+                document.querySelector('#datos_fisicos').classList.remove('d-none');
+            });
+
+            function actionUpdateHistoria(){
+                const json = {
+                    id_tercero: user.id_tercero,
+                    peso: document.querySelector('#peso').value,
+                    talla: document.querySelector('#altura').value,
+                    objetivo: document.querySelector('#objetivo').options[document.querySelector('#objetivo').selectedIndex].text,
+                    actividad: document.querySelector('#actividad').options[document.querySelector('#actividad').selectedIndex].text,
+                    dias_entrenamiento: document.querySelector('#dias_entrenamiento').value,
+                    prescripcion: document.querySelector('#prescripcion').value
+                };
+
+                document.querySelector('#datos_fisicos').classList.add('d-none');
+                document.querySelector('#entrenamiento').classList.remove('d-none');
+
+                axios.post('http://localhost:37777/terceros/antropometria', {
+                    id_tercero: user.id_tercero,
+                    antrop_peso: json.peso,
+                    antrop_talla: json.talla,
+                    id_dominio_objetivo: document.querySelector('#objetivo').value
+                }, { headers: { 'Content-Type': 'application/json' } })
+                    .then((response) => {
+                        console.log(response.data);
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                        alert('Error al actualizar los datos'); 
+                    });
+
+                axios.post('http://localhost:37777/generaEntrenamiento', json, { headers: { 'Content-Type': 'application/json' } })
+                    .then((response) => {
+                        console.log(response.data);
+                        generateExercisePlan(response.data);
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                        alert('Error al generar el entrenamiento'); 
+                    });
+            }
+
+            document.querySelector('#guardarDatos').addEventListener('click', () => {
+                actionUpdateHistoria();
+            });
+
+            function generateExercisePlan(plan_entrenamiento) {
+                plan_entrenamiento = plan_entrenamiento.plan_entrenamiento;
+                const planContainer = document.getElementById('exercisePlan');  
+                
+                for (let dia in plan_entrenamiento) {
+                    const ejerciciosDia = plan_entrenamiento[dia];
+
+                    const diaContainer = document.createElement('div');
+                    diaContainer.className = 'day-container';
+                    diaContainer.innerHTML = `<h3>${dia}</h3>`;
+
+                    ejerciciosDia.forEach(ejercicio => {
+                        const nombre = ejercicio.nombre;
+                        const card = document.createElement('div');
+                        card.className = 'col-md-4';
+                        card.innerHTML = `
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">${nombre}</h5>
+                                    <span class="card-text">Series: ${ejercicio.series}</span><br>
+                                    <span class="card-text">Repeticiones: ${ejercicio.repeticiones}</span>
+                                </div>
+                            </div>
+                        `;
+                        diaContainer.appendChild(card);
+                    });
+
+                    planContainer.appendChild(diaContainer);
+                }
+            }
+        });

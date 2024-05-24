@@ -1,0 +1,1526 @@
+[
+    {
+        "id_ejercicio": 680,
+        "nombre": "FLEXION DE TRONCO CON ENCOGIMIENTO "
+    },
+    {
+        "id_ejercicio": 400,
+        "nombre": "ELEVACION DE TALONES UNIPODAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 414,
+        "nombre": "ABDUCCION DE CADERA - DECUBITO LATERAL"
+    },
+    {
+        "id_ejercicio": 416,
+        "nombre": "ABDUCCION DE CADERA - POLEA "
+    },
+    {
+        "id_ejercicio": 419,
+        "nombre": "EXTENSION DE CADERA -  POLEA"
+    },
+    {
+        "id_ejercicio": 420,
+        "nombre": "EXTENSION DE CADERA - SEXTUPEDIA"
+    },
+    {
+        "id_ejercicio": 423,
+        "nombre": "EMPUJE DE CADERA - APOYO DE PIES EN BANCO"
+    },
+    {
+        "id_ejercicio": 424,
+        "nombre": "EMPUJE DE CADERA - PISO"
+    },
+    {
+        "id_ejercicio": 404,
+        "nombre": "ELEVACION DE TALONES SENTADO - MAQUINA"
+    },
+    {
+        "id_ejercicio": 407,
+        "nombre": "ELEVACION DE TALONES - PRENSA HORIZONTAL"
+    },
+    {
+        "id_ejercicio": 409,
+        "nombre": "PRENSA INCLINADA"
+    },
+    {
+        "id_ejercicio": 468,
+        "nombre": "REMO - POLEA "
+    },
+    {
+        "id_ejercicio": 441,
+        "nombre": "FONDOS - LIBRE"
+    },
+    {
+        "id_ejercicio": 442,
+        "nombre": "PUSH UP CON APOYO"
+    },
+    {
+        "id_ejercicio": 571,
+        "nombre": "EXTENSION DE TRONCO "
+    },
+    {
+        "id_ejercicio": 573,
+        "nombre": "EMPUJE DE CADERA UNILATERAL - PISO"
+    },
+    {
+        "id_ejercicio": 605,
+        "nombre": "NO APLICA"
+    },
+    {
+        "id_ejercicio": 603,
+        "nombre": "NO APLICA"
+    },
+    {
+        "id_ejercicio": 422,
+        "nombre": "EXTENSION DE CADERA - MAQUINA"
+    },
+    {
+        "id_ejercicio": 589,
+        "nombre": "ELIPTICA"
+    },
+    {
+        "id_ejercicio": 463,
+        "nombre": "ROW - HAMMER "
+    },
+    {
+        "id_ejercicio": 396,
+        "nombre": "FLEXION DE RODILLA  SENTADO"
+    },
+    {
+        "id_ejercicio": 577,
+        "nombre": "DOMINADAS - ASISTIDAS"
+    },
+    {
+        "id_ejercicio": 551,
+        "nombre": "EXTENSION DE TRONCO - BANCO 45°"
+    },
+    {
+        "id_ejercicio": 546,
+        "nombre": "SENTADILLA SUMO - BARRA"
+    },
+    {
+        "id_ejercicio": 553,
+        "nombre": "FLEXION DE TRONCO CON FLEXION ALTERNA DE CADERA"
+    },
+    {
+        "id_ejercicio": 544,
+        "nombre": "INCLINACION DE TRONCO LATERAL - BANCO"
+    },
+    {
+        "id_ejercicio": 428,
+        "nombre": "TIJERA - SMITH"
+    },
+    {
+        "id_ejercicio": 562,
+        "nombre": "EXTENSION DE TRONCO SEXTUPEDIA ALTERNO"
+    },
+    {
+        "id_ejercicio": 563,
+        "nombre": "FLEXION DE CADERA SOBRE BALON"
+    },
+    {
+        "id_ejercicio": 457,
+        "nombre": "HALON POLEA - AGARRE ESTRECHO "
+    },
+    {
+        "id_ejercicio": 483,
+        "nombre": "PREDICADOR BICEPS UNILATERAL- MANCUERNA"
+    },
+    {
+        "id_ejercicio": 496,
+        "nombre": "FLEXION DE CODO BILATERAL - POLEA ALTA"
+    },
+    {
+        "id_ejercicio": 434,
+        "nombre": "PRESS DECLINADO -HAMMER"
+    },
+    {
+        "id_ejercicio": 435,
+        "nombre": "PRESS INCLINADO - HAMMER"
+    },
+    {
+        "id_ejercicio": 421,
+        "nombre": "EXTENSION DE CADERA - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 479,
+        "nombre": "FLEXION DE CODO ALTERNO SENTADO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 403,
+        "nombre": "ELEVACION DE TALONES SENTADO - BARRA"
+    },
+    {
+        "id_ejercicio": 513,
+        "nombre": "ADUCCION ESCAPULAR - MAQUINA"
+    },
+    {
+        "id_ejercicio": 455,
+        "nombre": "PULL OVER  - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 460,
+        "nombre": "PULL OVER - POLEA "
+    },
+    {
+        "id_ejercicio": 493,
+        "nombre": "MARTILLO UNILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 418,
+        "nombre": "EXTENSION DE CADERA -HAMMER"
+    },
+    {
+        "id_ejercicio": 486,
+        "nombre": "FLEXION DE CODO  AGARRE CERRADO - BARRA"
+    },
+    {
+        "id_ejercicio": 489,
+        "nombre": "FLEXION DE CODO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 412,
+        "nombre": "SENTADILLA FRONTAL -BARRA"
+    },
+    {
+        "id_ejercicio": 484,
+        "nombre": "FLEXION DE CODO INVERTIDA - BARRA "
+    },
+    {
+        "id_ejercicio": 471,
+        "nombre": "FLEXION DE MUÑECA CON APOYO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 432,
+        "nombre": "APERTURAS PLANAS - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 411,
+        "nombre": "SENTADILLA -BARRA"
+    },
+    {
+        "id_ejercicio": 505,
+        "nombre": "EXTENSION DE CODO VERTICAL - BARRA"
+    },
+    {
+        "id_ejercicio": 514,
+        "nombre": "ELEVACIONES FRONTALES - BARRA"
+    },
+    {
+        "id_ejercicio": 515,
+        "nombre": "ELEVACIONES FRONTALES  - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 517,
+        "nombre": "ELEVACIONES LATERALES - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 521,
+        "nombre": "ELEVACIONES FRONTALES ALTERNO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 467,
+        "nombre": "REMO BILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 564,
+        "nombre": "EXTENSION DE TRONCO "
+    },
+    {
+        "id_ejercicio": 568,
+        "nombre": "PLANCHA CON REMO + PUSH UPS- MANCUERNA "
+    },
+    {
+        "id_ejercicio": 581,
+        "nombre": "ELEVACIONES FRONTALES ALTERNOSENTADO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 582,
+        "nombre": "ELEVACIONES LATERALES SENTADO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 394,
+        "nombre": "ADUCCION DE CADERA "
+    },
+    {
+        "id_ejercicio": 413,
+        "nombre": "ABDUCCION DE CADERA - MAQUINA "
+    },
+    {
+        "id_ejercicio": 560,
+        "nombre": "TIJERAS  VERTICALES - ABDOMEN "
+    },
+    {
+        "id_ejercicio": 576,
+        "nombre": "PENDULO - AUTOCARGA"
+    },
+    {
+        "id_ejercicio": 579,
+        "nombre": "´FLEXION DE RODILLA UNILATERAL - MAQUINA DE PIE"
+    },
+    {
+        "id_ejercicio": 580,
+        "nombre": "ROTACION EXTERNA DE HOMBRO SENTADO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 583,
+        "nombre": "ENCOGIMIENTO DE HOMBROS SENTADO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 584,
+        "nombre": "PRESS HOMBRO ALTERNO CON ROTACION DE MUÑECA - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 458,
+        "nombre": "LOW ROW - HAMMER "
+    },
+    {
+        "id_ejercicio": 540,
+        "nombre": "FLEXION DE TRONCO CON ENCOGIMIENTO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 523,
+        "nombre": "ADUCCION ESCAPULAR - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 524,
+        "nombre": "ADUCCION ESCAPULAR - POLEA "
+    },
+    {
+        "id_ejercicio": 472,
+        "nombre": "FLEXION DE MUÑECA UNILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 565,
+        "nombre": "OBLICUOS PISO"
+    },
+    {
+        "id_ejercicio": 555,
+        "nombre": "FLEXION DE TRONCO CON PIERNAS ELEVADAS"
+    },
+    {
+        "id_ejercicio": 549,
+        "nombre": "PENDULO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 559,
+        "nombre": "PLANCHA CON EXTENSION DE CADERA ALTERNO"
+    },
+    {
+        "id_ejercicio": 561,
+        "nombre": "PLANCHA CON FLEXION DE CADERA - ALTERNO"
+    },
+    {
+        "id_ejercicio": 550,
+        "nombre": "EXTENSION DE TRONCO -BANCO 90°"
+    },
+    {
+        "id_ejercicio": 527,
+        "nombre": "ENCOGIMIENTO DE HOMBROS - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 539,
+        "nombre": "FLEXION DE TRONCO CON ENCOGIMIENTO - BANCO "
+    },
+    {
+        "id_ejercicio": 526,
+        "nombre": "ENCOGIMIENTO DE HOMBROS - BARRA"
+    },
+    {
+        "id_ejercicio": 462,
+        "nombre": "REMO T - MAQUINA "
+    },
+    {
+        "id_ejercicio": 464,
+        "nombre": "REMO PRONO - BARRA "
+    },
+    {
+        "id_ejercicio": 547,
+        "nombre": "PESO MUERTO - BARRA"
+    },
+    {
+        "id_ejercicio": 397,
+        "nombre": "ABDUCCION DE CADERA -TOTAL"
+    },
+    {
+        "id_ejercicio": 399,
+        "nombre": "FLEXION DE RODILLA ACOSTADO"
+    },
+    {
+        "id_ejercicio": 531,
+        "nombre": "PRESS HOMBRO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 529,
+        "nombre": "PRESS HOMBRO SENTADO- BARRA"
+    },
+    {
+        "id_ejercicio": 533,
+        "nombre": "PRESS HOMBRO -SMITH"
+    },
+    {
+        "id_ejercicio": 402,
+        "nombre": "EXTENSION DE RODILLA"
+    },
+    {
+        "id_ejercicio": 574,
+        "nombre": "SENTADILLA PARED - BALON"
+    },
+    {
+        "id_ejercicio": 570,
+        "nombre": "PLANCHA CON ALCANCE"
+    },
+    {
+        "id_ejercicio": 512,
+        "nombre": "EXTENSION DE CODO HORIZONTAL UNILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 502,
+        "nombre": "EXTENSION DE CODO PATADA BILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 509,
+        "nombre": "EXTENSION DE CODO VERTICAL UNILATERAL - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 508,
+        "nombre": "EXTENSION DE CODO UNILATERAL SUPINO - POLEA "
+    },
+    {
+        "id_ejercicio": 485,
+        "nombre": "FLEXION DE CODO INVERTIDO AGARRE ESTRECHO-BARRA"
+    },
+    {
+        "id_ejercicio": 487,
+        "nombre": "FLEXIÓN DE CODO AGARRE ABIERTO - BARRA "
+    },
+    {
+        "id_ejercicio": 510,
+        "nombre": "EXTENSION DE CODO HORIZONTAL - BARRA"
+    },
+    {
+        "id_ejercicio": 542,
+        "nombre": "HALON POLEA ABIERTO"
+    },
+    {
+        "id_ejercicio": 575,
+        "nombre": "SENTADILLA SUMO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 429,
+        "nombre": "APERTURAS - MAQUINA CONTRACTORA"
+    },
+    {
+        "id_ejercicio": 552,
+        "nombre": "FLEXION DE TRONCO- SOBRE BALON"
+    },
+    {
+        "id_ejercicio": 556,
+        "nombre": "FLEXION DE TRONCO CON BALON"
+    },
+    {
+        "id_ejercicio": 558,
+        "nombre": "FLEXION DE TRONCO CON ROTACION"
+    },
+    {
+        "id_ejercicio": 405,
+        "nombre": "SENTADILLA - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 406,
+        "nombre": "FLEXION DE CADERA -TOTAL"
+    },
+    {
+        "id_ejercicio": 566,
+        "nombre": "PLANCHA LATERAL CON ABDUCCION DE CADERA APOYO EN RODILLAS"
+    },
+    {
+        "id_ejercicio": 476,
+        "nombre": "FLEXION DE MUÑECA SUPINO UNILATERAL - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 465,
+        "nombre": "REMO AGARRE SUPINO - BARRA "
+    },
+    {
+        "id_ejercicio": 459,
+        "nombre": "PULL DOWN - POLEA "
+    },
+    {
+        "id_ejercicio": 469,
+        "nombre": "DOMINADAS - LIBRES"
+    },
+    {
+        "id_ejercicio": 516,
+        "nombre": "ELEVACIONES FRONTALES - POLEA"
+    },
+    {
+        "id_ejercicio": 398,
+        "nombre": "ADUCCION DE CADERA - POLEA "
+    },
+    {
+        "id_ejercicio": 519,
+        "nombre": "ELEVACION UNILATERAL -MANCUERNA"
+    },
+    {
+        "id_ejercicio": 451,
+        "nombre": "PRESS PLANO ACOSTADO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 538,
+        "nombre": "FLEXION DE TRONCO CON ENCOGIMIENTO "
+    },
+    {
+        "id_ejercicio": 473,
+        "nombre": "FLEXION DE MUÑECA CON APOYO -BARRA"
+    },
+    {
+        "id_ejercicio": 475,
+        "nombre": "FLEXION DE MUÑECA  SUPINO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 525,
+        "nombre": "ELEVACIONES UNILATERALES -POLEA "
+    },
+    {
+        "id_ejercicio": 518,
+        "nombre": "ELEVACIONES LATERALES - MAQUINA "
+    },
+    {
+        "id_ejercicio": 520,
+        "nombre": "ELEVACIONES LATERALES ALTERNAS - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 450,
+        "nombre": "PRESS PLANO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 522,
+        "nombre": "ELEVACIONES FRONTALES UNILATERALES -POLEA "
+    },
+    {
+        "id_ejercicio": 569,
+        "nombre": "PLANCHA PRONO"
+    },
+    {
+        "id_ejercicio": 425,
+        "nombre": "TIJERA ALTERNA  - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 427,
+        "nombre": "TIJERA - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 449,
+        "nombre": "PRESS PLANO - BARRA"
+    },
+    {
+        "id_ejercicio": 482,
+        "nombre": "PREDICADOR BICEPS - BARRA"
+    },
+    {
+        "id_ejercicio": 499,
+        "nombre": "EXTENSION DE CODO  VERTICAL SENTADO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 415,
+        "nombre": "ABDUCCION DE CADERA-TOTAL"
+    },
+    {
+        "id_ejercicio": 466,
+        "nombre": "REMO UNILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 593,
+        "nombre": "NO APLICA"
+    },
+    {
+        "id_ejercicio": 410,
+        "nombre": "SENTADILLA -HACKA"
+    },
+    {
+        "id_ejercicio": 578,
+        "nombre": "FONDOS - ASISTIDOS "
+    },
+    {
+        "id_ejercicio": 588,
+        "nombre": "CAMINADORA"
+    },
+    {
+        "id_ejercicio": 436,
+        "nombre": "PRESS PLANO -HAMMER"
+    },
+    {
+        "id_ejercicio": 443,
+        "nombre": "PRESS DECLINADO  -  BARRA"
+    },
+    {
+        "id_ejercicio": 488,
+        "nombre": "FLEXION DE CODO BANCO INCLINADO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 498,
+        "nombre": "FONDOS - BANCO"
+    },
+    {
+        "id_ejercicio": 541,
+        "nombre": "FLEXION DE TRONCO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 438,
+        "nombre": "CRUCES  - POLEA ALTA  "
+    },
+    {
+        "id_ejercicio": 511,
+        "nombre": "EXTENSION DE CODO HORIZONTAL-MANCUERNA"
+    },
+    {
+        "id_ejercicio": 480,
+        "nombre": "MARTILLO - LAZO"
+    },
+    {
+        "id_ejercicio": 506,
+        "nombre": "EXTENSION DE CODO  PATADA UNILATERAL- MANCUERNA "
+    },
+    {
+        "id_ejercicio": 501,
+        "nombre": "EXTENSION DE CODO - MAQUINA"
+    },
+    {
+        "id_ejercicio": 495,
+        "nombre": "FLEXION DE CODO UNILATERAL -POLEA"
+    },
+    {
+        "id_ejercicio": 439,
+        "nombre": "CRUCES - POLEA BAJA"
+    },
+    {
+        "id_ejercicio": 543,
+        "nombre": "FLEXION DE TRONCO - BANCO DECLINADO"
+    },
+    {
+        "id_ejercicio": 586,
+        "nombre": "BICICLETA"
+    },
+    {
+        "id_ejercicio": 587,
+        "nombre": "RECUMBER"
+    },
+    {
+        "id_ejercicio": 452,
+        "nombre": "PRESS PLANO - SMITH "
+    },
+    {
+        "id_ejercicio": 417,
+        "nombre": "EXTENSION DE CADERA -TOTAL"
+    },
+    {
+        "id_ejercicio": 430,
+        "nombre": "PECK DECK"
+    },
+    {
+        "id_ejercicio": 491,
+        "nombre": "FLEXION DE CODO - POLEA "
+    },
+    {
+        "id_ejercicio": 437,
+        "nombre": "PRESS PLANO  SENTADO- MAQUINA "
+    },
+    {
+        "id_ejercicio": 431,
+        "nombre": "APERTURAS INCLINADAS - POLEA "
+    },
+    {
+        "id_ejercicio": 545,
+        "nombre": "EXTENSION DE TRONCO - BANCO"
+    },
+    {
+        "id_ejercicio": 481,
+        "nombre": "MARTILLO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 554,
+        "nombre": "ELEVACION DE PIERNAS"
+    },
+    {
+        "id_ejercicio": 600,
+        "nombre": "estiramiento"
+    },
+    {
+        "id_ejercicio": 585,
+        "nombre": "Prueba clez 1"
+    },
+    {
+        "id_ejercicio": 504,
+        "nombre": "PUSH DOWN - BARRA "
+    },
+    {
+        "id_ejercicio": 534,
+        "nombre": "REMO AL CUELLO - BARRA "
+    },
+    {
+        "id_ejercicio": 535,
+        "nombre": "REMO AL CUELLO - POLEA "
+    },
+    {
+        "id_ejercicio": 536,
+        "nombre": "ROTACION EXTERNA - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 453,
+        "nombre": "PRESS PLANO SENTADO -MAQUINA"
+    },
+    {
+        "id_ejercicio": 440,
+        "nombre": "CRUCES - POLEA MEDIA"
+    },
+    {
+        "id_ejercicio": 537,
+        "nombre": "FLEXION DE TRONCO "
+    },
+    {
+        "id_ejercicio": 444,
+        "nombre": "APERTURAS DECLINADAS - MANCUERNAS"
+    },
+    {
+        "id_ejercicio": 500,
+        "nombre": "PUSH DOWN - LAZO"
+    },
+    {
+        "id_ejercicio": 494,
+        "nombre": "CURL DE BICEPS CONCENTRADO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 474,
+        "nombre": "FLEXION DE MUÑECA  SUPINO - BARRA "
+    },
+    {
+        "id_ejercicio": 456,
+        "nombre": "ADUCCION ESCAPULAR - MAQUINA "
+    },
+    {
+        "id_ejercicio": 461,
+        "nombre": "REMO AGARRE SUPINO ESTRECHO - POLEA"
+    },
+    {
+        "id_ejercicio": 447,
+        "nombre": "APERTURAS INCLINADAS - MANCUERNAS"
+    },
+    {
+        "id_ejercicio": 395,
+        "nombre": "ALCANCE UNIPODAL"
+    },
+    {
+        "id_ejercicio": 657,
+        "nombre": "FLEXION DE TRONCO CON ENCOGIMIENTO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 658,
+        "nombre": "ADUCCION ESCAPULAR - MAQUINA "
+    },
+    {
+        "id_ejercicio": 609,
+        "nombre": "Aduccion Escapular Polea posición de pie"
+    },
+    {
+        "id_ejercicio": 598,
+        "nombre": "SALTO DE LAZO"
+    },
+    {
+        "id_ejercicio": 599,
+        "nombre": "TROTE ESTATICO"
+    },
+    {
+        "id_ejercicio": 610,
+        "nombre": "Press Banca"
+    },
+    {
+        "id_ejercicio": 611,
+        "nombre": "Press Onclinado Mancuerna"
+    },
+    {
+        "id_ejercicio": 612,
+        "nombre": "Halon Polea Alto Abierto"
+    },
+    {
+        "id_ejercicio": 613,
+        "nombre": "Remo Horizontal Unilateral"
+    },
+    {
+        "id_ejercicio": 614,
+        "nombre": "Sentadilla Libre"
+    },
+    {
+        "id_ejercicio": 615,
+        "nombre": "Peso Muerto Rumano"
+    },
+    {
+        "id_ejercicio": 616,
+        "nombre": "Hip Thrust"
+    },
+    {
+        "id_ejercicio": 608,
+        "nombre": "Push Ups"
+    },
+    {
+        "id_ejercicio": 572,
+        "nombre": "SENTADILLA BULGARA"
+    },
+    {
+        "id_ejercicio": 602,
+        "nombre": "flexion de codos "
+    },
+    {
+        "id_ejercicio": 478,
+        "nombre": "FLEXION DE CODO ALTERNO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 477,
+        "nombre": "FLEXION DE CODO ALTERNO - EN BANCO INCLINADO CON MANCUERNA "
+    },
+    {
+        "id_ejercicio": 490,
+        "nombre": "FLEXION DE CODO - MAQUINA"
+    },
+    {
+        "id_ejercicio": 617,
+        "nombre": "Bird Dog"
+    },
+    {
+        "id_ejercicio": 618,
+        "nombre": "Dead Bug"
+    },
+    {
+        "id_ejercicio": 567,
+        "nombre": "PLANCHA LATERAL CON ABDUCCION DE CADERA"
+    },
+    {
+        "id_ejercicio": 619,
+        "nombre": "Curl Bicep"
+    },
+    {
+        "id_ejercicio": 620,
+        "nombre": "Dorsiflexión + Plantiflexión"
+    },
+    {
+        "id_ejercicio": 621,
+        "nombre": "Core Antirotación polea"
+    },
+    {
+        "id_ejercicio": 622,
+        "nombre": "prueba clez 872022"
+    },
+    {
+        "id_ejercicio": 601,
+        "nombre": "lazo de batida"
+    },
+    {
+        "id_ejercicio": 623,
+        "nombre": "SALTO DE LAZO"
+    },
+    {
+        "id_ejercicio": 624,
+        "nombre": "TROTE ESTATICO"
+    },
+    {
+        "id_ejercicio": 625,
+        "nombre": "ELEVACIONES FRONTALES  - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 626,
+        "nombre": "REMO BILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 628,
+        "nombre": "PUSH UP CON APOYO"
+    },
+    {
+        "id_ejercicio": 629,
+        "nombre": "PRESS PLANO - BARRA"
+    },
+    {
+        "id_ejercicio": 630,
+        "nombre": "PRESS INCLINADO - BARRA"
+    },
+    {
+        "id_ejercicio": 631,
+        "nombre": "FLEXION DE CODO UNILATERAL POLEA ALTA"
+    },
+    {
+        "id_ejercicio": 632,
+        "nombre": "PULL OVER - BARRA"
+    },
+    {
+        "id_ejercicio": 633,
+        "nombre": "PULL OVER  - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 635,
+        "nombre": "REMO - POLEA "
+    },
+    {
+        "id_ejercicio": 637,
+        "nombre": "FONDOS - LIBRE"
+    },
+    {
+        "id_ejercicio": 638,
+        "nombre": "ROW - HAMMER "
+    },
+    {
+        "id_ejercicio": 639,
+        "nombre": "FLEXION DE MUÑECA CON APOYO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 640,
+        "nombre": "PRESS HOMBRO - HAMMER "
+    },
+    {
+        "id_ejercicio": 641,
+        "nombre": "HALON POLEA - AGARRE ESTRECHO "
+    },
+    {
+        "id_ejercicio": 642,
+        "nombre": "FLEXION DE CODO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 644,
+        "nombre": "PREDICADOR BICEPS UNILATERAL- MANCUERNA"
+    },
+    {
+        "id_ejercicio": 647,
+        "nombre": "FLEXION DE CODO INVERTIDA - BARRA "
+    },
+    {
+        "id_ejercicio": 648,
+        "nombre": "ELEVACIONES FRONTALES - BARRA"
+    },
+    {
+        "id_ejercicio": 649,
+        "nombre": "ELEVACIONES LATERALES - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 651,
+        "nombre": "EXTENSION DE CODO HORIZONTAL UNILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 653,
+        "nombre": "ELEVACIONES FRONTALES ALTERNO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 655,
+        "nombre": "LOW ROW - HAMMER "
+    },
+    {
+        "id_ejercicio": 656,
+        "nombre": "EXTENSION DE CODO PATADA BILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 659,
+        "nombre": "ADUCCION ESCAPULAR - MAQUINA"
+    },
+    {
+        "id_ejercicio": 660,
+        "nombre": "ADUCCION ESCAPULAR - POLEA "
+    },
+    {
+        "id_ejercicio": 662,
+        "nombre": "FLEXIÓN DE CODO AGARRE ABIERTO - BARRA "
+    },
+    {
+        "id_ejercicio": 663,
+        "nombre": "ENCOGIMIENTO DE HOMBROS - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 664,
+        "nombre": "EXTENSION DE CODO VERTICAL UNILATERAL - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 665,
+        "nombre": "ENCOGIMIENTO DE HOMBROS - BARRA"
+    },
+    {
+        "id_ejercicio": 666,
+        "nombre": "PRESS HOMBRO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 668,
+        "nombre": "REMO AGARRE SUPINO - BARRA "
+    },
+    {
+        "id_ejercicio": 645,
+        "nombre": "MARTILLO UNILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 627,
+        "nombre": "FLEXION DE CODO INVERTIDO AGARRE ESTRECHO-BARRA"
+    },
+    {
+        "id_ejercicio": 667,
+        "nombre": "EXTENSION DE CODO UNILATERAL SUPINO - POLEA "
+    },
+    {
+        "id_ejercicio": 634,
+        "nombre": "EXTENSION DE CODO VERTICAL - BARRA"
+    },
+    {
+        "id_ejercicio": 654,
+        "nombre": "FLEXION DE CODO INVERTIDO AGARRE ESTRECHO-BARRA"
+    },
+    {
+        "id_ejercicio": 661,
+        "nombre": "EXTENSION DE CODO HORIZONTAL - BARRA"
+    },
+    {
+        "id_ejercicio": 643,
+        "nombre": "FLEXION DE CODO  AGARRE CERRADO - BARRA"
+    },
+    {
+        "id_ejercicio": 646,
+        "nombre": "FLEXION DE CODO BILATERAL - POLEA ALTA"
+    },
+    {
+        "id_ejercicio": 669,
+        "nombre": "EXTENSION DE CODO HORIZONTAL  DE PIE - POLEA "
+    },
+    {
+        "id_ejercicio": 670,
+        "nombre": "EXTENSION DE CODO  PATADA UNILATERAL- MANCUERNA "
+    },
+    {
+        "id_ejercicio": 650,
+        "nombre": "EXTENSION DE CODO PATADA UNILATERAL APOYO EN BANCO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 672,
+        "nombre": "DOMINADAS - LIBRES"
+    },
+    {
+        "id_ejercicio": 673,
+        "nombre": "ELEVACIONES FRONTALES - POLEA"
+    },
+    {
+        "id_ejercicio": 674,
+        "nombre": "PRESS INCLINADO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 675,
+        "nombre": "MARTILLO - LAZO"
+    },
+    {
+        "id_ejercicio": 676,
+        "nombre": "ELEVACION UNILATERAL -MANCUERNA"
+    },
+    {
+        "id_ejercicio": 677,
+        "nombre": "PRESS INCLINADO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 678,
+        "nombre": "PRESS PLANO ACOSTADO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 679,
+        "nombre": "PRESS DECLINADO  -  BARRA"
+    },
+    {
+        "id_ejercicio": 681,
+        "nombre": "FLEXION DE MUÑECA CON APOYO -BARRA"
+    },
+    {
+        "id_ejercicio": 682,
+        "nombre": "FLEXION DE MUÑECA  SUPINO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 683,
+        "nombre": "ELEVACIONES UNILATERALES -POLEA "
+    },
+    {
+        "id_ejercicio": 684,
+        "nombre": "REMO UNILATERAL - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 685,
+        "nombre": "ELEVACIONES LATERALES - MAQUINA "
+    },
+    {
+        "id_ejercicio": 687,
+        "nombre": "ELEVACIONES LATERALES ALTERNAS - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 688,
+        "nombre": "PRESS PLANO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 689,
+        "nombre": "ELEVACIONES FRONTALES UNILATERALES -POLEA "
+    },
+    {
+        "id_ejercicio": 691,
+        "nombre": "PREDICADOR BICEPS - BARRA"
+    },
+    {
+        "id_ejercicio": 695,
+        "nombre": "FONDOS - BANCO"
+    },
+    {
+        "id_ejercicio": 696,
+        "nombre": "PRESS PLANO - SMITH "
+    },
+    {
+        "id_ejercicio": 699,
+        "nombre": "MARTILLO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 700,
+        "nombre": "PUSH DOWN - BARRA "
+    },
+    {
+        "id_ejercicio": 701,
+        "nombre": "REMO AL CUELLO - BARRA "
+    },
+    {
+        "id_ejercicio": 702,
+        "nombre": "REMO AL CUELLO - POLEA "
+    },
+    {
+        "id_ejercicio": 703,
+        "nombre": "ROTACION EXTERNA - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 704,
+        "nombre": "PRESS PLANO SENTADO -MAQUINA"
+    },
+    {
+        "id_ejercicio": 705,
+        "nombre": "CRUCES - POLEA MEDIA"
+    },
+    {
+        "id_ejercicio": 706,
+        "nombre": "FLEXION DE TRONCO "
+    },
+    {
+        "id_ejercicio": 707,
+        "nombre": "APERTURAS DECLINADAS - MANCUERNAS"
+    },
+    {
+        "id_ejercicio": 708,
+        "nombre": "PUSH DOWN - LAZO"
+    },
+    {
+        "id_ejercicio": 709,
+        "nombre": "CURL DE BICEPS CONCENTRADO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 712,
+        "nombre": "FLEXION DE MUÑECA  SUPINO - BARRA "
+    },
+    {
+        "id_ejercicio": 671,
+        "nombre": "PULL DOWN - POLEA "
+    },
+    {
+        "id_ejercicio": 713,
+        "nombre": "FLEXION DE CODO ALTERNO - EN BANCO INCLINADO CON MANCUERNA "
+    },
+    {
+        "id_ejercicio": 714,
+        "nombre": "REMO AGARRE SUPINO ESTRECHO - POLEA"
+    },
+    {
+        "id_ejercicio": 715,
+        "nombre": "APERTURAS INCLINADAS - MANCUERNAS"
+    },
+    {
+        "id_ejercicio": 557,
+        "nombre": "FLEXION DE TRONCO EN V "
+    },
+    {
+        "id_ejercicio": 426,
+        "nombre": "TIJERA -BARRA"
+    },
+    {
+        "id_ejercicio": 401,
+        "nombre": "ELEVACION DE TALONES - SMITH"
+    },
+    {
+        "id_ejercicio": 408,
+        "nombre": "PRENSA HORIZONTAL "
+    },
+    {
+        "id_ejercicio": 530,
+        "nombre": "PRESS HOMBRO - HAMMER "
+    },
+    {
+        "id_ejercicio": 716,
+        "nombre": "SENTADILLA ISOMÉTRICA "
+    },
+    {
+        "id_ejercicio": 717,
+        "nombre": "ABDUCCIONES EN MAQUILLANDO "
+    },
+    {
+        "id_ejercicio": 718,
+        "nombre": "ADUCCIÓN EN MÁQUINA "
+    },
+    {
+        "id_ejercicio": 692,
+        "nombre": "EXTENSION DE CODO  VERTICAL SENTADO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 710,
+        "nombre": "MARTILLO ALTERNO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 693,
+        "nombre": "FLEXION DE CODO UNILATERAL -POLEA"
+    },
+    {
+        "id_ejercicio": 694,
+        "nombre": "FLEXION DE CODO BANCO INCLINADO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 697,
+        "nombre": "FLEXION DE CODO - MAQUINA"
+    },
+    {
+        "id_ejercicio": 698,
+        "nombre": "FLEXION DE CODO - POLEA "
+    },
+    {
+        "id_ejercicio": 711,
+        "nombre": "FLEXION DE CODO ALTERNO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 690,
+        "nombre": "EXTENSION DE CODO - MAQUINA"
+    },
+    {
+        "id_ejercicio": 686,
+        "nombre": "EXTENSION DE CODO HORIZONTAL-MANCUERNA"
+    },
+    {
+        "id_ejercicio": 719,
+        "nombre": "CURL FEMORAL"
+    },
+    {
+        "id_ejercicio": 720,
+        "nombre": "DOMINADAS ASISTIDAS"
+    },
+    {
+        "id_ejercicio": 721,
+        "nombre": "Press sentado"
+    },
+    {
+        "id_ejercicio": 722,
+        "nombre": "Seated row"
+    },
+    {
+        "id_ejercicio": 723,
+        "nombre": "VUELOS PECTORAL"
+    },
+    {
+        "id_ejercicio": 724,
+        "nombre": "CURL BICEPS MÁQUINA "
+    },
+    {
+        "id_ejercicio": 725,
+        "nombre": "PLANCHA "
+    },
+    {
+        "id_ejercicio": 726,
+        "nombre": "EXTENSION DE PANTORRILLA"
+    },
+    {
+        "id_ejercicio": 727,
+        "nombre": "HIPEREXTENSIONES"
+    },
+    {
+        "id_ejercicio": 728,
+        "nombre": "ISOLATERAL FRONT LAT PULLDOWN "
+    },
+    {
+        "id_ejercicio": 445,
+        "nombre": "PRESS INCLINADO - BARRA "
+    },
+    {
+        "id_ejercicio": 729,
+        "nombre": "ISOLATERAL HIGH ROW"
+    },
+    {
+        "id_ejercicio": 730,
+        "nombre": "ISOLATERAL HIGH ROW"
+    },
+    {
+        "id_ejercicio": 731,
+        "nombre": "Flexo extensión lumbar "
+    },
+    {
+        "id_ejercicio": 497,
+        "nombre": "FLEXION DE CODO UNILATERAL POLEA ALTA"
+    },
+    {
+        "id_ejercicio": 446,
+        "nombre": "PRESS INCLINADO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 528,
+        "nombre": "PRESS HOMBRO - MAQUINA"
+    },
+    {
+        "id_ejercicio": 448,
+        "nombre": "PRESS INCLINADO - MAQUINA "
+    },
+    {
+        "id_ejercicio": 652,
+        "nombre": "PRESS HOMBRO - MAQUINA"
+    },
+    {
+        "id_ejercicio": 532,
+        "nombre": "PRESS HOMBRO SENTADO -MANCUERNA "
+    },
+    {
+        "id_ejercicio": 433,
+        "nombre": "APERTURAS PLANAS - POLEA "
+    },
+    {
+        "id_ejercicio": 454,
+        "nombre": "PULL OVER -  BARRA "
+    },
+    {
+        "id_ejercicio": 636,
+        "nombre": "PULL OVER - POLEA "
+    },
+    {
+        "id_ejercicio": 470,
+        "nombre": "MARTILLO ALTERNO - MANCUERNA"
+    },
+    {
+        "id_ejercicio": 492,
+        "nombre": "FLEXION  DE CODO SENTADO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 507,
+        "nombre": "EXTENSION DE CODO PATADA UNILATERAL APOYO EN BANCO - MANCUERNA "
+    },
+    {
+        "id_ejercicio": 503,
+        "nombre": "EXTENSION DE CODO HORIZONTAL  DE PIE - POLEA "
+    },
+    {
+        "id_ejercicio": 732,
+        "nombre": "Hipopresivos"
+    },
+    {
+        "id_ejercicio": 733,
+        "nombre": "Hipopresivos"
+    },
+    {
+        "id_ejercicio": 734,
+        "nombre": "Extension de codo en polea para triceps "
+    },
+    {
+        "id_ejercicio": 735,
+        "nombre": "Extension katana en polea para triceps "
+    },
+    {
+        "id_ejercicio": 736,
+        "nombre": "Extension unilateral en polea alta para triceps "
+    },
+    {
+        "id_ejercicio": 737,
+        "nombre": "Curl femoral sentado "
+    },
+    {
+        "id_ejercicio": 738,
+        "nombre": "Curl con mancuernas para biceps"
+    },
+    {
+        "id_ejercicio": 739,
+        "nombre": "Curl bayesian para biceps"
+    },
+    {
+        "id_ejercicio": 740,
+        "nombre": "remo en polea para espalda  "
+    },
+    {
+        "id_ejercicio": 741,
+        "nombre": "Press militar para hombro "
+    },
+    {
+        "id_ejercicio": 742,
+        "nombre": "Sentadilla con banco "
+    },
+    {
+        "id_ejercicio": 743,
+        "nombre": "caminata del granjero con mancuerna "
+    },
+    {
+        "id_ejercicio": 744,
+        "nombre": "Step Up autocarga "
+    },
+    {
+        "id_ejercicio": 745,
+        "nombre": "Trote en el puesto "
+    },
+    {
+        "id_ejercicio": 746,
+        "nombre": "Estiramientos dinamicos "
+    },
+    {
+        "id_ejercicio": 747,
+        "nombre": "HIP TRUSTH"
+    },
+    {
+        "id_ejercicio": 748,
+        "nombre": "HIP TRUST"
+    },
+    {
+        "id_ejercicio": 749,
+        "nombre": "PESO MUERTO RUMANO"
+    },
+    {
+        "id_ejercicio": 750,
+        "nombre": "SENTADILLA SMITH"
+    },
+    {
+        "id_ejercicio": 752,
+        "nombre": "SENTADILLA SMITH"
+    },
+    {
+        "id_ejercicio": 753,
+        "nombre": "EXTENSION DE TRICEPS-POLEA BAJA"
+    },
+    {
+        "id_ejercicio": 754,
+        "nombre": "MARTILLO-LAZO"
+    },
+    {
+        "id_ejercicio": 755,
+        "nombre": "PRESS BANCA"
+    },
+    {
+        "id_ejercicio": 756,
+        "nombre": "REMO HORIZONTAL"
+    },
+    {
+        "id_ejercicio": 757,
+        "nombre": "REMO HORIZONTAL"
+    },
+    {
+        "id_ejercicio": 758,
+        "nombre": "BICEPS MANCUERNA"
+    },
+    {
+        "id_ejercicio": 759,
+        "nombre": "BICEPS POLEA"
+    },
+    {
+        "id_ejercicio": 760,
+        "nombre": "AVANZADAS TIJERA"
+    },
+    {
+        "id_ejercicio": 761,
+        "nombre": "PRESS ARNOLD"
+    },
+    {
+        "id_ejercicio": 762,
+        "nombre": "SENTADILLA ISOMÉTRICA "
+    },
+    {
+        "id_ejercicio": 763,
+        "nombre": "PESO MUERTO RUMANO"
+    },
+    {
+        "id_ejercicio": 765,
+        "nombre": "JALON A PECHO ESTÁNDARES "
+    },
+    {
+        "id_ejercicio": 766,
+        "nombre": "POLEA ALTA CRUZADA"
+    },
+    {
+        "id_ejercicio": 767,
+        "nombre": "PRESS DE BANCA DECLINADO"
+    },
+    {
+        "id_ejercicio": 768,
+        "nombre": "HALON POLEA A CARA"
+    },
+    {
+        "id_ejercicio": 769,
+        "nombre": "CURL CON BARRA Z"
+    },
+    {
+        "id_ejercicio": 770,
+        "nombre": "BICEPS POLEA"
+    },
+    {
+        "id_ejercicio": 771,
+        "nombre": "CURL MARTILLO INCLINADO"
+    },
+    {
+        "id_ejercicio": 772,
+        "nombre": "FLEXION LATERAL MANCUERNA-ABD"
+    },
+    {
+        "id_ejercicio": 774,
+        "nombre": "TOQUE LA TALÓN"
+    },
+    {
+        "id_ejercicio": 775,
+        "nombre": "SENTADILLA SISSY"
+    },
+    {
+        "id_ejercicio": 776,
+        "nombre": "TOQUE AL TALÓN"
+    },
+    {
+        "id_ejercicio": 777,
+        "nombre": "PREDICADOR - MAQUINA"
+    },
+    {
+        "id_ejercicio": 773,
+        "nombre": "SENTADILLA TRX"
+    },
+    {
+        "id_ejercicio": 764,
+        "nombre": "PRENSA HORIZONTAL UNILATERAL"
+    },
+    {
+        "id_ejercicio": 778,
+        "nombre": "FONDOS MAQUINA SENTADO"
+    },
+    {
+        "id_ejercicio": 779,
+        "nombre": "SENTADILLA EN CAJÓN"
+    },
+    {
+        "id_ejercicio": 780,
+        "nombre": "PUENTE ISOMÉTRICO"
+    },
+    {
+        "id_ejercicio": 781,
+        "nombre": "ENTRENAMIENTO FUNCIONAL "
+    },
+    {
+        "id_ejercicio": 782,
+        "nombre": "ENTRENAMIENTO FUNCIONAL "
+    },
+    {
+        "id_ejercicio": 783,
+        "nombre": "ENTRENAMIENTO FUNCIONAL "
+    },
+    {
+        "id_ejercicio": 784,
+        "nombre": "CRUNSH M GILL"
+    },
+    {
+        "id_ejercicio": 751,
+        "nombre": "SENTADILLA SMITH"
+    },
+    {
+        "id_ejercicio": 785,
+        "nombre": "EXTENSIÓN DE RODILLA UNILATERAL"
+    }
+]

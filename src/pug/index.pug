@@ -1,0 +1,97 @@
+extends _template.pug
+include _mixins.pug
+block js
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js')
+block css
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')
+
+block content
+    .container.mt-5
+        .row
+            .col-md-12
+                .d-flex.justify-content-center.align-items-center
+                    .shadow-carrusel
+                        #carouselExampleIndicators.carousel.slide(data-bs-ride="carousel")
+                            .carousel-indicators
+                                each img, index in images
+                                    button(class=index === 0 ? 'active' : '' type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to=index aria-label=`Slide ${index + 1}`)
+                            .carousel-inner
+                                each img, index in images
+                                    a.carousel-item(class=index === 0 ? 'active' : '',)
+                                        img.d-block.w-100(src=img.url, alt=`Imagen ${index + 1}`, data-shadow=img.shadow)
+                                button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+                                    span.carousel-control-prev-icon(aria-hidden='true')
+                                    span.visually-hidden Previous
+                                button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+                                    span.carousel-control-next-icon(aria-hidden='true')
+                                    span.visually-hidden Next
+    
+    .mt-5
+    .container
+        .row
+            .col-md-12
+                h1.text-center.mb-5 ENTRENA CON NOSOTROS
+            .col-md-12
+                .owl-carousel.owl-theme
+                    each gym in gyms
+                        .gym-card
+                            .gym-card__image(style=`background-image: url('${gym.logo_licencia}')`)
+                                a(href='/gym')
+                                    h3.gym-card__title= gym.nombre_licencia
+                                p.gym-card__city= gym.ciudad
+
+                                
+    .download-app(style="background-image: url('img/gym.jpg');")
+      .row.align-items-center
+        .col-md-6.imagen(style="background-image: url('img/app.png');")
+        .col-md-6
+          h1.app-logo Obtén <strong>10% de descuento</strong> en tu primera compra
+          p.lead.mt-4.mb-5.app-intro Tendrás acceso a los mejores entrenadores y gimnasios de tu ciudad.
+          .download-buttons
+            a(href='#').app-download
+                i.fab.fa-apple
+                | Descargar en App Store
+            a(href='#').app-download
+                i.fab.fa-google-play
+                | Descargar en Google Play
+        
+    .mt-5
+    .container
+        .row
+            .col-md-12
+                h1.text-center.mb-5 Productos
+            +productCard(products)
+
+
+block jsexec
+
+    script.
+        function changeShadow() {
+            const shadow = document.querySelector('.carousel-item.active img').dataset.shadow;
+            document.querySelector('.shadow-carrusel').style.boxShadow = '0 0 300px ' + shadow;
+        }
+        const carousel = document.querySelector('#carouselExampleIndicators');
+        carousel.addEventListener('slid.bs.carousel', changeShadow);
+        changeShadow();
+
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                nav: true,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });

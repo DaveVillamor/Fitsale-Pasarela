@@ -1,0 +1,71 @@
+extends _template.pug
+
+block logo
+block header
+block content
+    .portada_gym(style="background-image: url('img/gym.jpg');")
+        .fondo_logo
+            .gym_logo(style="background-image: url('img/logo_fitsale.png');" )
+        h1.gym_title FITSALE GYM
+
+    br
+    .container
+        .row
+            .col-md-12
+                h2.text-center.mb-5 Te damos la bienvenida a la pasarela de pago de <br><b>Fitsale Gym</b>
+
+
+                //- ciudad y sucursal
+                .form-group.d-flex.justify-content-center.align-items-center.flex-column
+                    span.text-center Selecciona tu ciudad*
+                    select#ciudad_cliente.form-select.mb-3(style="max-width: 25em;")
+                        option(value="") Ciudad y sucursal
+                        option(value="1") Ciudad de México - Sucursal 1
+                        option(value="2") Ciudad de México - Sucursal 2
+                        option(value="3") Guadalajara - Sucursal 1
+                        option(value="4") Guadalajara - Sucursal 2
+                        option(value="5") Monterrey - Sucursal 1
+                        option(value="6") Monterrey - Sucursal 2
+                        option(value="7") Puebla - Sucursal 1
+                        option(value="8") Puebla - Sucursal 2
+
+                //- sucursal
+                .form-group.d-flex.justify-content-center.align-items-center.flex-column
+                    span.text-center Selecciona tu sucursal*
+                    select#sucursal_cliente.form-select.mb-3(style="max-width: 25em;").disabled
+                        option(value="") Sucursal
+                        option(value="1") Sucursal 1
+                        option(value="2") Sucursal 2
+                        option(value="3") Sucursal 3
+                        option(value="4") Sucursal 4
+                        option(value="5") Sucursal 5
+                        option(value="6") Sucursal 6
+                        option(value="7") Sucursal 7
+                        option(value="8") Sucursal 8
+                
+                //- plan
+                .form-group.d-flex.justify-content-center.align-items-center.flex-column
+                    span.text-center Selecciona tu plan*
+                    select#plan_cliente.form-select.mb-3(style="max-width: 25em;")
+                        option(value="") Plan
+                        option(value="1") Plan 1
+                        option(value="2") Plan 2
+                        option(value="3") Plan 3
+                        option(value="4") Plan 4
+                        option(value="5") Plan 5
+                        option(value="6") Plan 6
+                        option(value="7") Plan 7
+                        option(value="8") Plan 8
+
+                //- botón continuar
+                .form-group.d-flex.justify-content-center.align-items-center.flex-column
+                    button.btn.btn-primary.btn-lg.btn-block.mb-3 Continuar
+
+                
+                
+                
+                
+                .form-group.d-flex.justify-content-center.align-items-center.flex-column.d-none#email_cliente
+                    span.text-center Coloca tu correo electrónico para continuar*
+                    input#email.form-control(type="email", placeholder="Correo electrónico" style="max-width: 25em;").is-valid
+                    button.btn.btn-primary.btn-lg.btn-block.mb-3 Continuar

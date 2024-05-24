@@ -1,0 +1,10 @@
+//- mixin de productos
+mixin productCard(products)
+  each product in products
+    .col-md-3.col-6
+      .product-card
+        .product-card__image(style=`background-image: url('${product.image}')`)
+        .product-card__content
+          h3.product-card__title= product.name
+          p.product-card__price= product.price
+          a.product-card__button(href=product.url) Ver más

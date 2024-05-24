@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --color-primary: #ca2d1d;
+  --color-danger: #FF0060;
+  --color-success: #1B9C85;
+  --color-warning: #F7D060;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme {
+  --color-background: #e7e7e7;
+  --color-white: #1e1e1e;
+  --color-dark: #141414;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+  background-color: var(--color-background);
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 0.87rem;
+}
+
+small {
+  font-size: 0.76rem;
+}
+
+p {
+  color: var(--color-dark-variant);
+}
+
+b {
+  color: var(--color-dark);
+}
+
+.text-muted {
+  color: var(--color-info-dark);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+
+.logo {
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: 1em;
+}
+.nav_container nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.nav_container nav ul li {
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.nav_container nav ul li a {
+  padding: 0.5rem 1rem;
+  color: var(--color-dark);
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: var(--border-radius-1);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav_container nav ul li a:hover {
+  background-color: var(--color-primary);
+}
+
+.shadow-carrusel {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  background-color: var(--color-white);
+  position: relative;
+  max-width: 60em;
+}
+.shadow-carrusel img {
+  border-radius: var(--card-border-radius);
+  object-fit: cover;
+}
+.shadow-carrusel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--card-border-radius);
+  box-shadow: -12px 15px 20px rgba(0, 0, 0, 0.207);
+  z-index: -2;
+}
+
+.product-card {
+  border-radius: var(--card-border-radius);
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  position: relative;
+}
+.product-card img {
+  border-radius: var(--card-border-radius);
+  object-fit: cover;
+}
+.product-card .product-card__content {
+  padding: var(--card-padding);
+}
+.product-card .product-card__content h3.product-card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.product-card .product-card__content p.product-card__price {
+  font-size: 0.9rem;
+  color: var(--color-dark-variant);
+  margin-bottom: 1rem;
+}
+.product-card .product-card__content a.product-card__button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.product-card .product-card__content a.product-card__button:hover {
+  background-color: var(--color-dark);
+}
+.product-card .product-card__image {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  padding: 5rem 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  margin-top: 5rem;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.8);
+}
+footer .footer-logo {
+  width: 150px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gym-card {
+  border-radius: var(--card-border-radius);
+  background-color: var(--color-white);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  border: 2px solid transparent;
+}
+.gym-card .gym-card__image {
+  height: 290px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+.gym-card .gym-card__image h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  z-index: 2;
+}
+.gym-card .gym-card__image p {
+  font-size: 0.9rem;
+  color: var(--color-dark-variant);
+  text-align: center;
+  z-index: 2;
+}
+.gym-card .gym-card__image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(10deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: -1;
+}
+.gym-card:hover .gym-card__image {
+  background-size: 90%;
+}
+.gym-card:hover {
+  box-shadow: -12px 15px 20px rgba(0, 0, 0, 0.207);
+  border-color: var(--color-primary);
+  border-width: 2px;
+  border-style: solid;
+  background-color: var(--color-primary);
+}
+
+.download-app {
+  padding: 5rem 5em;
+  color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.download-app:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-primary);
+  opacity: 0.8;
+  z-index: -1;
+}
+.download-app .app-logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.download-app .app-intro {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.download-app .download-buttons {
+  display: flex;
+}
+.download-app .download-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  border-radius: var(--border-radius-1);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.download-app .download-buttons a i {
+  margin-right: 0.5rem;
+  font-size: 3rem;
+}
+.download-app .download-buttons a:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+.download-app strong {
+  font-weight: 800;
+  color: var(--color-dark);
+}
+.download-app .imagen {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.portada_gym {
+  height: 25em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.portada_gym .fondo_logo {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+.portada_gym .fondo_logo .gym_logo {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.portada_gym h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--color-dark);
+}
+.portada_gym:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgb(24, 26, 30) 100%);
+  z-index: -1;
+}
+
+.barra_sucursales {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border-radius: 15em;
+}
+.barra_sucursales .sucursal {
+  width: auto;
+  color: var(--color-white);
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  text-decoration: none;
+  border-radius: 15em;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+.barra_sucursales .sucursal:hover {
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+.barra_sucursales .sucursal.active {
+  transform: scale(0.9);
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.circle-icon {
+  width: 5em;
+  height: 5em;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.circle-icon i {
+  font-size: 4rem;
+  color: white;
+}
+
+.exercise-list {
+  margin-top: 20px;
+}
+
+.exercise-item {
+  margin-bottom: 10px;
+}
+
+i * {
+  color: white;
+}
+
+h1.gym_title {
+  color: white;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--border-radius-1);
+  border: 1px solid var(--color-dark-variant);
+}

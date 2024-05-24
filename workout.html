@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="es" data-bs-theme=""><head><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="css/workout.css"><div class="logo" style="background-image: url('img/logo_fitsale.png')"></div></head><body><input class="d-none" type="checkbox" id="switch-theme"><div class="container"><div class="row"><div class="col-md-12 text-center" id="bienvenida"><div class="w-100 mb-4 d-flex justify-content-center align-items-center"><div class="circle-icon text-center"><i class="fas fa-medal"></i></div></div><h1>Hola <strong class="text-danger" id="nombreUsuario"></strong></h1><h2>Para comenzar con tu rutina de entrenamiento vamos a realizar una evaluación de tu estado físico.</h2><br><h3>Tenemos los siguientes datos de tu última evaluación</h3><div class="datos text-start"><table class="table table-bordered"><thead><tr><th class="w-50 text-end">Antropometría</th><th class="w-50">Valor   </th></tr></thead><tbody><tr><td class="w-50 text-end">Altura</td><td class="w-50" id="alturaValor"></td></tr><tr><td class="text-end">Peso</td><td id="pesoValor"></td></tr><tr><td class="text-end">Objetivo</td><td id="objetivoValor"></td></tr></tbody><tfooter><tr><td class="text-center" colspan="2">Última actualización <br><b class="text-danger" id="fecha_valorarcion"></b></td></tr></tfooter></table></div><div class="d-flex justify-content-center align-items-center"><button class="btn btn-danger btn-lg btn-block mt-4 me-3" id="generar_rutina"><span>✨ Generar rutina</span></button><button class="btn btn-outline-danger btn-lg btn-block mt-4" id="actualizar_datos">Actualizar mis datos</button></div></div></div><div class="row mt-5"><div class="col-md-12 d-none" id="datos_fisicos"><div class="w-100 mb-4 d-flex justify-content-center align-items-center"><div class="circle-icon text-center"><i class="fas fa-weight"></i></div></div><h1 class="text-center">Datos físicos</h1><h2 class="text-center">Últimos datos antes de comenzar.</h2><div class="form_datos_fisicos"><div class="mb-3"><label for="altura">Altura (cm)</label><input class="form-control" id="altura" type="number" placeholder="Altura"></div><div class="mb-3"><label for="peso">Peso (kg)</label><input class="form-control" id="peso" type="number" placeholder="Peso"></div><div class="mb-3"><label for="objetivo">Objetivo</label><select class="form-select" id="objetivo"><option value="0">Selecciona</option></select></div><div class="mb-3"><label for="actividad">Actividad física</label><select class="form-select" id="actividad"><option value="0">Selecciona</option><option value="1">Sedentario</option><option value="2">Ligera</option><option value="3">Moderada</option><option value="4">Intensa</option></select></div><div class="mb-3"><label for="dias_entrenamiento">Cuántos días a la semana entrenas</label><select class="form-select" id="dias_entrenamiento"><option value="0">Selecciona</option><option value="1">1 día</option><option value="2">2 días</option><option value="3">3 días</option><option value="4">4 días</option><option value="5">5 días</option><option value="6">6 días</option><option value="7">7 días</option></select></div><div class="mb-3"><label for="prescripcion">Prescripción médica</label><textarea class="form-control" id="prescripcion" type="text" placeholder="Prescripción médica" value="Ninguna"></textarea></div><div class="mb-3 text-center w-100 sticky-bottom bg-bootom"><button class="btn btn-danger btn-lg btn-block mt-4" id="guardarDatos">Guardar</button></div></div></div><div class="col-md-12 d-none" id="entrenamiento"><div class="w-100 mb-4 d-flex justify-content-center align-items-center"><div class="circle-icon text-center"><i class="fas fa-dumbbell"></i></div></div><h1 class="text-center">Entrenamiento</h1><h2 class="text-center">Tu rutina de entrenamiento ha sido generada.</h2><hr><div class="entrenamiento"><div class="mb-3"><div class="row" id="exercisePlan"></div></div></div></div></div></div><div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div></body><script src="js/index.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js"></script><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script><script>let urlParams = new URLSearchParams(window.location.search);
+let user = { id: urlParams.get('id') };
+document.addEventListener('DOMContentLoaded', () => {
+
+    axios.post('http://localhost:37777/api/datosIniciales', { id: user.id }, { headers: { 'Content-Type': 'application/json' } })
+        .then((response) => {
+            const user = response.data.user;
+            const objetivos = response.data.objetivos;
+
+            document.querySelector('#nombreUsuario').textContent = user.nombre1 + ' ' + user.apellido1;
+            document.querySelector('#alturaValor').textContent = user.antrop_talla;
+            document.querySelector('#pesoValor').textContent = user.antrop_peso;
+            document.querySelector('#objetivoValor').textContent = user.objetivo;
+            document.querySelector('#fecha_valorarcion').textContent = dayjs(user.fecha_valoracion).format('DD/MM/YYYY');
+
+            const objetivoSelect = document.querySelector('#objetivo');
+            objetivos.forEach(objetivo => {
+                const option = document.createElement('option');
+                option.value = objetivo.id_dominio;
+                option.textContent = objetivo.dominio;
+                if (objetivo.id_dominio === user.antrop_objetivo) {
+                    option.selected = true;
+                }
+                objetivoSelect.appendChild(option);
+            });
+
+            document.querySelector('#altura').value = user.antrop_talla;
+            document.querySelector('#peso').value = user.antrop_peso;
+        })
+        .catch((error) => {
+            console.error(error);
+            alert('Error al cargar los datos iniciales');
+        });
+
+    document.querySelector('#bienvenida button').addEventListener('click', () => {
+        document.querySelector('#bienvenida').classList.add('d-none');
+        document.querySelector('#datos_fisicos').classList.remove('d-none');
+    });
+
+    function actionUpdateHistoria(){
+        const json = {
+            id_tercero: user.id_tercero,
+            peso: document.querySelector('#peso').value,
+            talla: document.querySelector('#altura').value,
+            objetivo: document.querySelector('#objetivo').options[document.querySelector('#objetivo').selectedIndex].text,
+            actividad: document.querySelector('#actividad').options[document.querySelector('#actividad').selectedIndex].text,
+            dias_entrenamiento: document.querySelector('#dias_entrenamiento').value,
+            prescripcion: document.querySelector('#prescripcion').value
+        };
+
+        document.querySelector('#datos_fisicos').classList.add('d-none');
+        document.querySelector('#entrenamiento').classList.remove('d-none');
+
+        axios.post('http://localhost:37777/terceros/antropometria', {
+            id_tercero: user.id_tercero,
+            antrop_peso: json.peso,
+            antrop_talla: json.talla,
+            id_dominio_objetivo: document.querySelector('#objetivo').value
+        }, { headers: { 'Content-Type': 'application/json' } })
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+                alert('Error al actualizar los datos'); 
+            });
+
+        axios.post('http://localhost:37777/generaEntrenamiento', json, { headers: { 'Content-Type': 'application/json' } })
+            .then((response) => {
+                console.log(response.data);
+                generateExercisePlan(response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+                alert('Error al generar el entrenamiento'); 
+            });
+    }
+
+    document.querySelector('#guardarDatos').addEventListener('click', () => {
+        actionUpdateHistoria();
+    });
+
+    function generateExercisePlan(plan_entrenamiento) {
+        plan_entrenamiento = plan_entrenamiento.plan_entrenamiento;
+        const planContainer = document.getElementById('exercisePlan');  
+        
+        for (let dia in plan_entrenamiento) {
+            const ejerciciosDia = plan_entrenamiento[dia];
+
+            const diaContainer = document.createElement('div');
+            diaContainer.className = 'day-container';
+            diaContainer.innerHTML = `<h3>${dia}</h3>`;
+
+            ejerciciosDia.forEach(ejercicio => {
+                const nombre = ejercicio.nombre;
+                const card = document.createElement('div');
+                card.className = 'col-md-4';
+                card.innerHTML = `
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">${nombre}</h5>
+                            <span class="card-text">Series: ${ejercicio.series}</span><br>
+                            <span class="card-text">Repeticiones: ${ejercicio.repeticiones}</span>
+                        </div>
+                    </div>
+                `;
+                diaContainer.appendChild(card);
+            });
+
+            planContainer.appendChild(diaContainer);
+        }
+    }
+});</script><script>particlesJS.load('particles-js', 'js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});</script></html>
