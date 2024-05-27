@@ -182,17 +182,58 @@ document.addEventListener('DOMContentLoaded', async () => {
               document.getElementById('cardsSaveds').style.display = 'block';
               tercero.data.tarjetas.forEach((fuente) => {
                 console.log(fuente);
-                element = `                  
-              <button class="btn w-100 my-2" id="cardSave">
-                <div>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="" style="width: 50px" />
-                </div>
-                <div class="d-flex justify-content-center align-items-end flex-column">
-                  <span style="font-size: 1em">${fuente.name}</span>
-                  <span>${fuente.account_number}</span>
-                </div>
-              </button>`;
+                let element = null;
+                if (fuente.type == 'NEQUI')
+                  element = `
+                  <button class="btn w-100 my-2" id="cardSave" data-id="${fuente.fuente_pago}">
+                    <div>
+                      <img src="https://assets-global.website-files.com/6317a229ebf7723658463b4b/64dfef05bc6705edb9447499_nequi.svg" alt="" style="width: 50px" />
+                    </div>
+                    <div class="d-flex justify-content-center align-items-end flex-column">
+                      <span style="font-size: 1em">${fuente.phone_number}</span>
+                    </div>
+                  </button>`;
+                if (fuente.type == 'CARD') {
+                  console.log();
+                  element = `
+                  <button class="btn w-100 my-2" id="cardSave" data-id="${fuente.fuente_pago}">
+                  <div>
+                      ${
+                        detectarTipoTarjeta(fuente.bin) == 'Visa'
+                          ? `<i style="font-size: 2em;" class="fa-brands fa-cc-visa"></i>`
+                          : detectarTipoTarjeta(fuente.bin) == 'MasterCard'
+                          ? `<i style="font-size: 2em;" class="fa-brands fa-cc-mastercard"></i>`
+                          : detectarTipoTarjeta(fuente.bin) == 'American Express'
+                          ? `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/American_Express_logo.svg/1200px-American_Express_logo.svg.png" alt="" style="width: 50px" />`
+                          : detectarTipoTarjeta(fuente.bin) == 'Diners Club'
+                          ? `<i style="font-size: 2em;" class="fa-brands fa-cc-diners-club"></i>`
+                          : detectarTipoTarjeta(fuente.bin) == 'Discover'
+                          ? `<i style="font-size: 2em;" class="fa-brands fa-cc-discover"></i>`
+                          : detectarTipoTarjeta(fuente.bin) == 'JCB'
+                          ? `<i style="font-size: 2em;" class="fa-brands fa-cc-jcb"></i>`
+                          : ''
+                      }
+                      
+                    </div>
+                    <div class="d-flex justify-content-center align-items-end flex-column">
+                      <span style="font-size: 1em">${fuente.name}</span>
+                      <span>**** ${fuente.last_four}</span>
+                    </div>
+                  </button>`;
+                }
                 document.getElementById('cardsSaveds').insertAdjacentHTML('beforeend', element);
+              });
+              document.querySelectorAll('#cardSave').forEach((card) => {
+                card.addEventListener('click', async (e) => {
+                  console.log(e.target.closest('button').getAttribute('data-id'));
+
+                  data.id_tercero = data.id_tercero ? data.id_tercero : id_tercero;
+                  data.id_plan = data.id_plan ? data.id_plan : id_plan;
+                  data.id_sucursal = data.id_sucursal ? data.id_sucursal : id_sucursal;
+                  data.fuente_pago = data.fuente_pago ? data.fuente_pago : e.target.closest('button').getAttribute('data-id');
+
+                  console.log(data);
+                });
               });
             } else document.getElementById('cardsSaveds').style.display = 'none';
           }
@@ -562,3 +603,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     );
   });
 });
+
+function detectarTipoTarjeta(numeroTarjeta) {
+  const iin = numeroTarjeta.slice(0, 6);
+  const visa = /^4[0-9]{5}$/;
+  const masterCard = /^5[1-5][0-9]{4}$/;
+  const americanExpress = /^3[47][0-9]{4}$/;
+  const dinersClub = /^3(?:0[0-5]|[68][0-9])[0-9]{3}$/;
+  const discover = /^6(?:011|5[0-9]{2})[0-9]{3}$/;
+  const jcb = /^(?:2131|1800|35\d{3})$/;
+
+  if (visa.test(iin)) {
+    return 'Visa';
+  } else if (masterCard.test(iin)) {
+    return 'MasterCard';
+  } else if (americanExpress.test(iin)) {
+    return 'American Express';
+  } else if (dinersClub.test(iin)) {
+    return 'Diners Club';
+  } else if (discover.test(iin)) {
+    return 'Discover';
+  } else if (jcb.test(iin)) {
+    return 'JCB';
+  } else {
+    return 'Desconocido';
+  }
+}
