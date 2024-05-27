@@ -1,0 +1,348 @@
+#notToken {
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/Mp7yxDBt/IMAFONDO-AZUL.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#notToken #alertMessage {
+  background-color: rgba(255, 255, 255, 0.842);
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1em;
+}
+
+#notToken #alertMessage h1 {
+  font-size: 2.5em;
+}
+
+#notToken #alertMessage p {
+  font-size: 1.5em;
+}
+
+#notToken #alertMessage img {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+  display: block;
+}
+
+#Token {
+  display: none;
+}
+
+#headerBanner {
+  background-image: url('https://img.freepik.com/foto-gratis/gimnasio-equipo-ciclismo-indoor_23-2149270210.jpg?t=st=1716655868~exp=1716659468~hmac=34cb96852f4c9c1403206811d5875c4343be709c3aa30958b3e2722cb4c5e161&w=1380');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #ffffff;
+  height: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#headerBanner h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+#divImgLogo {
+  width: auto;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.568);
+  border: 3px solid white;
+  padding: 1em;
+}
+
+#divImgLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+#content {
+  padding: 0 25%;
+  background-color: #e7e7e7;
+}
+
+#content #selects {
+  padding: 0 20%;
+}
+
+select {
+  border: none;
+  height: 3em;
+  border-radius: 0.5em;
+  appearance: none;
+  padding: 0 30px 0 15px;
+  width: 100%;
+  color: black;
+  font-size: 1.5em;
+}
+
+#viewPay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5em;
+}
+
+#viewPay #viewPayContentCard {
+  background-color: white;
+  box-shadow: 1px 1px 50px 10px rgba(0, 0, 0, 0.295);
+
+  border-radius: 1em;
+  padding: 1em;
+}
+
+#viewPay #viewPayContentCard span {
+  font-size: 1em;
+}
+
+#viewPay #viewPayContentCard #fechaInicio {
+  text-align: center;
+  border: 1.5px solid grey;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#btn-volver {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#btn-volver-card {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#btn-volver-nequi {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#btn-volver-pse {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#cardSave {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: grey; */
+  border: 3px solid rgba(0, 0, 0, 0.151);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.123);
+  border-radius: 0.7em;
+  padding: 0.5em 2em;
+}
+
+#cardSave span {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+#paymentMetod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: grey; */
+  border: 3px solid rgba(0, 0, 0, 0.151);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.123);
+  border-radius: 0.7em;
+  padding: 0.5em 2em;
+  height: 5.5em;
+}
+
+#paymentMetod #title {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#paymentMetod #subTitle {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+#cardsSaveds {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#cardsSaveds {
+  scrollbar-width: thin;
+  scrollbar-color: #afafaf #fff;
+}
+
+#imgBtns {
+  width: 3em;
+}
+
+#formTercero label {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#formTercero select {
+  width: 100%;
+  height: 2.5em;
+}
+
+#mesCard {
+  width: 100%;
+  height: 2.5em;
+}
+
+#anioCard {
+  width: 100%;
+  height: 2.5em;
+}
+#cuotasCard {
+  width: 100%;
+  height: 2.5em;
+}
+
+#typeDocPse {
+  width: 100%;
+  height: 2.5em;
+}
+
+#typePersonPse {
+  width: 100%;
+  height: 2.5em;
+}
+
+#headCardInfo label {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+@media (max-width: 1440px) {
+  #notToken #alertMessage {
+    width: 40%;
+    height: 50%;
+    padding: 0 4em;
+  }
+
+  #notToken #alertMessage h1 {
+    font-size: 2em;
+  }
+
+  #notToken #alertMessage p {
+    font-size: 1em;
+  }
+
+  #notToken #alertMessage img {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #viewPay {
+    margin-top: 1em;
+    padding: 0 1em;
+  }
+  #cardSave {
+    padding: 0.5em 0.8em;
+  }
+  #cardSave span {
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  #paymentMetod {
+    padding: 0.5em 1em;
+    height: 5.5em;
+  }
+
+  #paymentMetod #title {
+    font-size: 0.1em;
+    font-weight: 500;
+  }
+
+  #paymentMetod #subTitle {
+    font-size: 0.5em;
+    font-weight: 500;
+  }
+
+  #imgBtns {
+    width: 2.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  #divImgLogo {
+    width: 80%;
+    height: 30%;
+  }
+
+  #headerBanner h1 {
+    font-size: 2rem;
+  }
+
+  #content {
+    padding: 0 10%;
+    background-color: #e7e7e7;
+  }
+
+  #content #selects {
+    padding: 0 1%;
+  }
+
+  #notToken #alertMessage {
+    width: 90%;
+    height: 50%;
+    padding: 0 4em;
+  }
+
+  #notToken #alertMessage h1 {
+    font-size: 2em;
+  }
+
+  #notToken #alertMessage p {
+    font-size: 1em;
+  }
+
+  #notToken #alertMessage img {
+    width: 90%;
+    height: 90%;
+  }
+
+  #viewPay {
+    margin-top: 1em;
+    padding: 0 1em;
+  }
+}
